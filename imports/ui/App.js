@@ -59,8 +59,52 @@ class App extends Component {
   }
  
   render() {
+
+    const css = {
+      loginIcon: {
+        position: 'absolute',
+        left: 0,
+        bottom: 0,
+        color: '#fff',
+        fontSize: 34,
+        padding: 8,
+      },
+      splash: {
+        color: 'white',
+        position: 'absolute',
+        top: 50,
+        left: 0,
+        width: '100%',
+        height: window.innerHeight - 50,
+        fontFamily: 'monospace'
+      },
+      table: {
+        display: 'table',
+        width: '100%',
+        height: '100%'
+      },
+      cell: {
+        display: 'table-cell',
+        textAlign: 'center',
+        verticalAlign: 'middle',
+      }
+    }
+
+    console.log(this.props.currentUser);
+
     return (
-      <div className="container">
+      <div>
+        <div id="login-wrapper">
+          <AccountsUIWrapper/>
+          <i style={css.loginIcon} className="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div style={css.splash}>
+          <div style={css.table}><div style={css.cell}>
+          {(this.props.currentUser) ? 'Hello ' + this.props.currentUser.profile.name : 'You need to login!'}
+          </div></div>
+        </div>
+      </div>
+      /*<div className="container">
         <header>
           <h1>Todo List ({this.props.incompleteCount})</h1>
 
@@ -88,7 +132,7 @@ class App extends Component {
         <ul>
           {this.renderTasks()}
         </ul>
-      </div>
+      </div>*/
     );
   }
 }
