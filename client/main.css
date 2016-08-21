@@ -1,5 +1,8 @@
 /* CSS declarations go here */
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
 html {
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	width: 100%;
 	height: 100%;
@@ -17,135 +20,6 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	background-color: hsl(0,0%,16%);
+	/*background-color: hsl(0,0%,16%);*/
 	margin: 0;
-}
-
-#login-buttons {
-	display: block;
-}
-
-#login-sign-in-link,
-#login-name-link {
-	display: block;
-	font-size: 18px;
-	padding: 16px 32px;
-	text-decoration: none !important;
-	color: hsl(0,0%,100%);
-	font-family: monospace;
-    text-transform: uppercase;
-    background-color: hsl(100,50%,50%);
-    text-align: center;
-}
-
-#login-dropdown-list {
-	width: 100%;
-	padding: 0;
-	border: none;
-	border-radius: 0;
-	margin: 0;
-}
-
-#login-buttons-image-twitter,
-#login-buttons-image-facebook,
-#login-buttons-image-google,
-#login-dropdown-list .or,
-#login-dropdown-list .login-form.login-password-form {
-	display: none !important;
-}
-
-#login-dropdown-list .login-close-text {
-	background-color: hsl(0, 0%, 80%);
-	display: block;
-	width: 100%;
-	text-decoration: none;
-	text-align: center;
-	padding: 18px;
-	font-size: 15px;
-	font-family: monospace;
-    text-transform: uppercase;
-    color: hsl(0,0%,16%);
-}
-
-#login-buttons-facebook {
-	margin: 0;
-	border-radius: 0 !important;
-	padding: 32px 8px !important;
-	border: none !important;
-    text-transform: uppercase;
-    background-color: #4867AA !important;
-}
-
-#login-buttons-facebook .sign-in-text-facebook {
-	font-family: monospace !important;
-	
-}
-
-#login-buttons .text-besides-image {
-	margin: 0;
-}
-
-#login-buttons-facebook .text-besides-image.sign-in-text-facebook {
-	/*font-family: monospace;
-    text-transform: uppercase;*/
-    /*color: hsl(0,0%,16%);*/
-}
-
-#login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
-	background-color: #596595;
-}
-
-#login-buttons-google {
-	background-color: #EA4335 !important;
-	margin: 0;
-	border-radius: 0 !important;
-	padding: 32px 8px !important;
-	border: none !important;
-    text-transform: uppercase;
-}
-
-#login-buttons-google .sign-in-text-google {
-	font-family: monospace !important;
-
-}
-
-#login-buttons .login-image {
-	left: 20px;
-    top: 32px;
-}
-
-#login-wrapper {
-	position: relative;
-	width: 100%;
-}
-
-#login-wrapper > span {
-	display: block;
-	width: 100%;
-}
-
-#login-buttons-logout {
-	background-color: tomato !important;
-	margin: 0;
-	border-radius: 0 !important;
-	padding: 32px 8px !important;
-	border: none !important;
-	font-family: monospace !important;
-    text-transform: uppercase;
-    font-size: 18px !important;
-}
-
-#login-buttons-twitter {
-	background-color: #00ACED !important;
-	margin: 0;
-	border-radius: 0 !important;
-	padding: 32px 8px !important;
-	border: none !important;
-	font-family: monospace;
-    text-transform: uppercase;
-}
-
-#login-buttons-twitter .sign-in-text-twitter {
-	font-family: monospace !important;
-	
 }
